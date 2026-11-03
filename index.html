@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>แฟ้มสะสมผลงานของฉัน</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    background: #fff5fa;
+    color: #555;
+}
+
+header {
+    background: #f5a9ca;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #a83c70;
+}
+
+.home {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.home img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 7px solid white;
+}
+
+.home h1 {
+    color: #e879ad;
+    font-size: 38px;
+}
+
+.home p {
+    margin-top: 12px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ed8db8;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.title {
+    color: #e879ad;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    line-height: 2.2;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px #f2cbdc;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #e879ad;
+    margin-bottom: 15px;
+}
+
+.contact {
+    background: #ffe0ed;
+    line-height: 2.2;
+}
+
+footer {
+    background: #f5a9ca;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e879ad;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 600px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">แฟ้มสะสมผลงาน ♡</div>
+    <nav>
+        <a href="#home">หน้าแรก</a>
+        <a href="#about">ประวัติส่วนตัว</a>
+        <a href="#education">ประวัติการศึกษา</a>
+        <a href="#skills">ความสามารถ</a>
+        <a href="#hobby">งานอดิเรก</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+</header>
+
+<!-- หน้าแรก -->
+<div class="home" id="home">
+
+    <img src="profile.jpg" alt="รูปประจำตัว">
+
+    <div>
+        <h1>สวัสดีค่ะ 💗</h1>
+        <h2>ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h2>
+        <p>ฉันชื่อ วรรณพร จิตร์สนอง</p>
+        <p>นักเรียนระดับชั้น ปวช.2/2</p>
+        <a href="#about" class="btn">รู้จักฉันเพิ่มเติม</a>
+    </div>
+
+</div>
+
+<!-- ประวัติส่วนตัว -->
+<section id="about">
+    <h2 class="title">♡ ประวัติส่วนตัว ♡</h2>
+
+    <div class="about">
+        <p>ชื่อ-นามสกุล : วรรณพร จิตร์สนอง</p>
+        <p>ชื่อเล่น : แตงกวา</p>
+        <p>อายุ : 16 ปี</p>
+        <p>วันเกิด : 22/03/53</p>
+        <p>สัญชาติ : ไทย</p>
+        <p>ศาสนา : พุทธ</p>
+        <p>ที่อยู่ : 33/1 หมุ่ 2 ตำบล โรงช้าง อ.พรหมบุรี จ.สิงห์บุรี 16120</p>
+        <p>คติประจำใจ : ความพยายามอยู่ที่ไหน ความสำเร็จอยู่ที่นั่น</p>
+    </div>
+</section>
+
+<!-- ประวัติการศึกษา -->
+<section id="education">
+    <h2 class="title">♡ ประวัติการศึกษา ♡</h2>
+
+    <div class="container">
+        <div class="card">
+            <h3>ระดับประถมศึกษา</h3>
+            <p>โรงเรียน นาคประดิษฐ์วิทยา</p>
+        </div>
+
+        <div class="card">
+            <h3>ระดับมัธยมศึกษา</h3>
+            <p>โรงเรียน สิงหพาหุ"ประสานมิตรอุปถัมสื</p>
+        </div>
+
+        <div class="card">
+            <h3>ระดับประกาศนียบัตรวิชาชีพ</h3>
+            <p>วิทยาลัย เทคนิคสิงห์บุรี</p>
+            <p>แผนกวิชา เทคโนโลยีสารสนเทศ</p>
+        </div>
+    </div>
+</section>
+
+<!-- ความสามารถ -->
+<section id="skills">
+    <h2 class="title">♡ ความสามารถพิเศษ ♡</h2>
+
+    <div class="container">
+        <div class="card">
+            <h3>💻 คอมพิวเตอร์</h3>
+            <p>สามารถใช้งานคอมพิวเตอร์เบื้องต้นได้</p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 การเขียนเว็บไซต์</h3>
+            <p>มีความรู้เกี่ยวกับ HTML CSS และ JavaScript</p>
+        </div>
+
+        <div class="card">
+            <h3>🎨 การออกแบบ</h3>
+            <p>ชอบออกแบบและตกแต่งผลงาน</p>
+        </div>
+    </div>
+</section>
+
+<!-- งานอดิเรก -->
+<section id="hobby">
+    <h2 class="title">♡ งานอดิเรก ♡</h2>
+
+    <div class="container">
+        <div class="card">
+            <h3>🎧</h3>
+            <p>ฟังเพลง</p>
+        </div>
+
+        <div class="card">
+            <h3>📸</h3>
+            <p>ถ่ายรูป</p>
+        </div>
+
+        <div class="card">
+            <h3>🛍️</h3>
+            <p>ขายของออนไลน์</p>
+        </div>
+    </div>
+</section>
+
+<!-- ช่องทางติดต่อ -->
+<section id="contact" class="contact">
+    <h2 class="title">♡ ช่องทางการติดต่อ ♡</h2>
+    <p>📧 อีเมล : example@gmail.com</p>
+    <p>📱 เบอร์โทรศัพท์ : 08X-XXX-XXXX</p>
+    <p>📘 เฟซบุ๊ก : ................</p>
+</section>
+
+<footer>
+    <p>จัดทำโดย วรรณพร จิตร์สนอง</p>
+    <p>© 2026 แฟ้มสะสมผลงานของฉัน 💗</p>
+</footer>
+
+<button id="topBtn" onclick="goTop()">↑</button>
+
+<script>
+let topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 200) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+};
+
+function goTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+window.onload = function() {
+    console.log("ยินดีต้อนรับสู่แฟ้มสะสมผลงานของฉัน");
+};
+</script>
+
+</body>
+</html>
